@@ -13,6 +13,20 @@ app.use(express.json());
 
 // MongoDB Connection
 // MongoDB Connection
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'Help Desk API is running!',
+    status: 'active',
+    endpoints: {
+      auth: '/api/auth',
+      tickets: '/api/tickets'
+    }
+  });
+});
+
+// Routes
+
+
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/helpdesk', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
