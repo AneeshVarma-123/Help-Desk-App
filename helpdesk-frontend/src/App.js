@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MessageSquare, Clock, AlertCircle, Plus, Send, LogOut, LogIn } from 'lucide-react';
 
-const API_URL = 'https://helpdesk-backend.onrender.com/api';
+const API_URL = 'https://help-desk-app-hhws.onrender.com/api';
 
 const HelpDeskApp = () => {
   const [user, setUser] = useState(null);
