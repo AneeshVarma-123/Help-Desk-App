@@ -11,7 +11,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://helpdesk-frontend-er9myuzgt-aneesh-varmas-projects.vercel.app/', // Add your Vercel URL
+    'https://helpdesk-frontend-doy9utl9a-aneesh-varmas-projects.vercel.app', // Add your Vercel URL
     'https://your-custom-domain.com' // If you have one
   ],
   credentials: true
