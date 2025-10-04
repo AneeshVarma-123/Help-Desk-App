@@ -8,7 +8,14 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://helpdesk-frontend-er9myuzgt-aneesh-varmas-projects.vercel.app/', // Add your Vercel URL
+    'https://your-custom-domain.com' // If you have one
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // MongoDB Connection
